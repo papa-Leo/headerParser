@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-app.get('/whoami', (req, res) => {
+app.get('/api/whoami', (req, res) => {
 	const ip = req.ip;
 	const lang = req.headers['accept-language'];
 	const software = req.headers['user-agent'];
